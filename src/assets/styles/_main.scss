@@ -1,0 +1,24 @@
+// Define global styles/mixins in this file
+@import './variables';
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  flex: 1 0 auto;
+}
+
+@mixin align-center() {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
