@@ -21,6 +21,9 @@ const Header: React.SFC = () => {
           <Link className="nav-link" to="/demo">
             Demo
           </Link>
+          <Link className="nav-link" to="/todo">
+            Todo
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

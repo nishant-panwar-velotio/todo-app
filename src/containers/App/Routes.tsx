@@ -6,6 +6,7 @@ import Loader from 'src/components/Loader';
 const Routes: React.SFC = () => (
   <Suspense fallback={<Loader animation="border" />}>
     <Switch>
+      <Route path="/todo" component={lazy(() => import('../Todo'))} />
       <Route path="/demo" component={lazy(() => import('../Demo'))} />
       <Route path="/" component={lazy(() => import('../Home'))} />
     </Switch>
